@@ -10,16 +10,16 @@ void main() {
     setUp(() {
       calculator = StringCalculator();
     });
-
     test('should return 0 for empty string', () {
-      // Arrange
       const input = '';
-
-      // Act
       final result = calculator.add(input);
+      /// So the expect method takes two input the actual value and the expected value.
+      /// Our input string is currently an empty string  and what we are using as out expected string is 0
+      /// So, the test should pass provided our input is empty and our expected result is 0.
+      /// other wise it will fail.
 
-      // Assert
       expect(result, 0);
+
     });
   });
 }
